@@ -1,0 +1,21 @@
+#main{
+    border-style: groove;
+    width: 500px;
+    background: antiquewhite;
+    padding: 2%;
+}
+
+#resultado{
+    background: aquamarine;
+}
+
+#title{
+    border-style: dashed;
+    background: tan;
+}
+
+#inputs{
+    width: 80%;
+    border-style: dotted;
+    background: seagreen;
+}

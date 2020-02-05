@@ -1,2 +1,2 @@
-# teoremadePitagoras
-Web app de programa para validar un triangulo en base a la medida de sus tres lados. Desarrollado por Daniel Diaz Infante Romo utilizando Javascript, css y html
+# Pythagorean theorem
+Web app to validate the 3 sides of a triangle and get the triangle type using the Pythagorean theorem

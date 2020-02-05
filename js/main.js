@@ -1,6 +1,6 @@
 function main() {
     //declarar
-    var a,b,c,suma,mayor, msg, imagen;
+    var a,b,c,suma,mayor, msg;
     //obtencion de datos
     a = document.getElementById("a").value;
     b = document.getElementById("b").value;
@@ -32,15 +32,15 @@ function main() {
         }
         //preguntar si la suma de los menores es mayor o igual al lado mas grande
         if (suma >= mayor && ((a + b) > c)) {// ((a+b) > c) desigualdad de triangulos
-            msg = "El triangulo es: " + tipoTriangulo(a, b, c);// mostrar el tipo
+            msg = "The triangle is: " + tipoTriangulo(a, b, c);// mostrar el tipo
         }else{
-            msg = "Esas medidas no son posibles, medida " + mayor + " no respeta el teorema";
+            msg = "Those measures are not valid, " + mayor + " does not follow the theorem";
             document.getElementById("imagen").innerHTML = "";
         }
     }
     else
     {
-        msg = "Solo NUMEROS mayores a 0";
+        msg = "Only numbers greater than 0";
         document.getElementById("imagen").innerHTML = "";
     }
 
@@ -53,13 +53,13 @@ function main() {
 function tipoTriangulo(a, b, c) {
     if (a === b && b === c) {
         document.getElementById("imagen").innerHTML = String("<img src='img/equi.jpg'>");
-        return 'Equilatero';
+        return 'Equilateral';
     } else if (a === b || a === c || b === c){
         document.getElementById("imagen").innerHTML = String("<img src='img/iso.jpg'>");
         return 'Isosceles';
     }else{
         document.getElementById("imagen").innerHTML = String("<img src='img/esca.jpg'>");
-        return 'Escaleno';
+        return 'Scalene';
     }
 }
 
